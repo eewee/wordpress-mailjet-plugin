@@ -20,7 +20,7 @@ Mailjet's official plugin for WordPress will:
 
 Our plugin simply extends the WordPress wp_mail() function, to use Mailjet's SMTP instead. This will improve your deliverability. You will also get live and in-depth statistics to track and optimize in real time. Making the choice of Mailjet is the right solution for your [transactional emails](http://www.mailjet.com/features/transactional-email.html) , [bulk emails](http://www.mailjet.com/features/bulk-email.html) and [newsletter emails](https://www.mailjet.com/features/newsletter-service.html).
 
-**Sign up form & contact lists Managemen**
+**Sign up form & contact lists Management**
 -  Another great feature of this plugin is the sign up form Widget. It allows your site visitors to join your Mailjet lists. You can create contact lists directly from the plugin dashboard. The Widget will let you add forms to any post or any page.
 
 **Installing the Plugin**
