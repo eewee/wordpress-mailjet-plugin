@@ -60,3 +60,9 @@ This plugin is currently available in English, French, Spanish and German. Suppo
 
 **How do I create a signup form?**
 Once your Mailjet plugin is installed, click on "Appearance" in the left-side menu  and then choose the "Widgets" section. Just drag  the "Subscribe to Our Newsletter" widget and drop it where you want it to appear (i.e. the sidebar). For more precisions, please visit the official help page [Adding Widgets](http://en.support.wordpress.com/widgets/#adding-widgets).
+
+
+License
+-------
+
+wordpress-mailjet-plugin is licensed under the MIT License. (See [LICENSE](LICENSE.md))
