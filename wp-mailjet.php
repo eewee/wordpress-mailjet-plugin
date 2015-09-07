@@ -167,8 +167,8 @@ function show_mailjet_subscribe_field()
 
 function register_extra_fields ( $user_id, $password = "", $meta = array() )
 {
-	$subscribe = filter_var($_POST ['mailjet_subscribe_ok'], FILTER_SANITIZE_NUMBER_INT);
-	
+	$subscribe = (isset($_POST ['mailjet_subscribe_ok'])) ? filter_var($_POST ['mailjet_subscribe_ok'], FILTER_SANITIZE_NUMBER_INT) : 0;
+
 	update_user_meta( $user_id, 'mailjet_subscribe_ok', $subscribe);
 	mailjet_subscribe_unsub_user_to_list($subscribe, $user_id);
 }
@@ -204,9 +204,9 @@ function my_save_extra_profile_fields( $user_id )
 	if ( !current_user_can( 'edit_user', $user_id ) )
 		return false;
 
-	$subscribe = filter_var($_POST ['mailjet_subscribe_ok'], FILTER_SANITIZE_NUMBER_INT);
+	$subscribe = (isset($_POST ['mailjet_subscribe_ok'])) ? filter_var($_POST ['mailjet_subscribe_ok'], FILTER_SANITIZE_NUMBER_INT) : 0;
 
-	update_usermeta($user_id, 'mailjet_subscribe_ok', $subscribe);
+	update_user_meta($user_id, 'mailjet_subscribe_ok', $subscribe);
 	mailjet_subscribe_unsub_user_to_list($subscribe, $user_id);
 }
 
