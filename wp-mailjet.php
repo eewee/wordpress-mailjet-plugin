@@ -206,7 +206,7 @@ function my_save_extra_profile_fields( $user_id )
 
 	$subscribe = filter_var($_POST ['mailjet_subscribe_ok'], FILTER_SANITIZE_NUMBER_INT);
 
-	update_usermeta($user_id, 'mailjet_subscribe_ok', $subscribe);
+	update_user_meta($user_id, 'mailjet_subscribe_ok', $subscribe);
 	mailjet_subscribe_unsub_user_to_list($subscribe, $user_id);
 }
 
